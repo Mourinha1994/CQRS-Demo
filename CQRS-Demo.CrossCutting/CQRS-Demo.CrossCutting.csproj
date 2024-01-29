@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>CQRS_Demo.CrossCutting</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS-Demo.Application\CQRS-Demo.Application.csproj" />
+    <ProjectReference Include="..\CQRS-Demo.Domain\CQRS-Demo.Domain.csproj" />
+    <ProjectReference Include="..\CQRS-Demo.Infrastructure\CQRS-Demo.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
