@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddRepositories();
+builder.Services.AddMediatR();
 
 var app = builder.Build();
 

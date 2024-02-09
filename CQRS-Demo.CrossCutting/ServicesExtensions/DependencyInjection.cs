@@ -26,4 +26,13 @@ public static class DependencyInjection
 
         return services;
     }
+
+    public static IServiceCollection AddMediatR(this IServiceCollection services)
+    {
+        var myHandlers = AppDomain.CurrentDomain.Load("CQRS-Demo.Application");
+
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(myHandlers));
+
+        return services;
+    }
 }
