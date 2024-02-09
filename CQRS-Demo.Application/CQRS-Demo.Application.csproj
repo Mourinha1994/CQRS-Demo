@@ -15,4 +15,8 @@
     <ProjectReference Include="..\CQRS-Demo.Domain\CQRS-Demo.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Members\Queries\" />
+  </ItemGroup>
+
 </Project>
